@@ -1,0 +1,69 @@
+  
+    .area1 {
+        grid-area: area1;
+    }
+    .area2 {
+        grid-area: area2;
+    }
+    .area3 {
+        grid-area: area3;
+    }
+    .area4 {
+        grid-area: area4;
+    }
+    .area5 {
+        grid-area: area5;
+    }
+    .area6 {
+        grid-area: area6;
+    }
+    .area7 {
+        grid-area: area7;
+    }
+    .area8 {
+        grid-area: area8;
+    }
+    .area9 {
+        grid-area: area9;
+    }
+    .area10 {
+        grid-area: area10;
+    }
+    .area11 {
+        grid-area: area11;
+    }
+
+
+    .single_photos {
+        width: 800px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        
+
+        %single_img_bloc {
+            width: 600%;
+            height: 500px;
+            background-repeat: no-repeat;
+            
+        }
+            .bloc_img_milkbottle {
+                
+                @extend %single_img_bloc;
+                
+             }
+             .bloc_img_halforange {
+                
+                @extend %single_img_bloc;
+             }
+             .bloc_img_cone {
+                
+                @extend %single_img_bloc;
+             }
+             .bloc_img_sugar {
+                
+                @extend %single_img_bloc;
+             }
+       
+        
+    }

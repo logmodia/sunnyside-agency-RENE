@@ -1,0 +1,217 @@
+
+
+body {
+    
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    margin: 0 auto;
+    width: 1440px;
+    
+}
+
+
+$white_color : hsl(0, 0%, 100%);
+$very_dark_grayish_blue: hsl(213, 9%, 45%);
+$dark_moderate_cyan: hsl(168, 34%, 60%);
+$dark_desaturated_cyan: hsl(167, 40%, 30%);
+$YellowOk: hsl(51, 100%, 49%);
+$soft_red: hsl(7, 99%, 80%);
+$dark_blue: hsl(198, 62%, 26%);
+$verydark_desaturatedblue: hsl(212, 27%, 19%);
+
+@import '_head_of_page';
+
+a {
+    text-decoration: none;
+}
+
+main {
+    
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: min-content 1fr;
+    row-gap: 0px;
+
+    grid-template-areas: 
+    "a a"
+    "a a"
+    "a a"
+    ;
+    
+    section {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    section section {
+        grid-area: a;
+        
+        padding: 0px;
+        margin: 0px;
+
+        
+    }
+
+    %abstractP {
+            color: $very_dark_grayish_blue;
+            font-weight: bolder;
+
+            padding-bottom: 30px;
+    }
+
+    .transform_your_brand {
+            padding-top: 200px;
+            padding-left: 50px;
+            padding-right: 50px;
+
+            h2 {
+                color:black;
+                font-size: 40px;
+                font-family: 'Fraunces', serif !important;
+            }
+
+            p {
+                
+                @extend %abstractP;
+            }
+
+            a {
+                text-decoration: none;
+                font-family: 'Fraunces', serif !important;
+                text-transform: uppercase;
+                font-weight: bolder;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 110%;
+                    height: 5px;
+                    border-radius: 2.5px;
+                    transform: translateX(-5%);
+                    background-color:$YellowOk;
+
+                    position: absolute;
+                    bottom: 0px;
+
+                    z-index: -1;
+                }
+            }
+        
+                    
+    }
+
+    .secc_standout_audience {
+
+        padding-top: 200px;
+        padding-left: 50px;
+        padding-right: 50px;
+
+            h2 {
+                color:black;
+                font-size: 40px;
+                font-family: 'Fraunces', serif !important;
+            }
+            p {
+                
+                @extend %abstractP;
+            }
+
+            a {
+                text-decoration: none;
+                font-family: 'Fraunces', serif !important;
+                text-transform: uppercase;
+                font-weight: bolder;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 110%;
+                    height: 5px;
+                    border-radius: 2.5px;
+                    transform: translateX(-5%);
+                    background-color:$soft_red;
+
+                    position: absolute;
+                    bottom: 0px;
+
+                    z-index: -1;
+                }
+            }
+    }
+
+    .sec_graphic_design {
+        background-image: url('./images/photos/image-graphic-design.jpg');
+        padding: 0px;
+        text-align: center;
+        
+        div {
+            margin-top: 400px;
+            
+            h2 {
+                color:black;
+                font-size: 40px;
+                font-family: 'Fraunces', serif !important;
+            }
+    
+            p {
+                color: $dark_desaturated_cyan;
+                font-weight: bolder;
+            }
+        }
+    }
+
+    .sec_photographie {
+        background-image: url('./images/photos/image-photography.jpg');
+        height: 600px;
+        padding: 0px;
+        
+        text-align: center;
+        div {
+            margin-top: 400px;
+            
+            h2 {
+                color:black;
+                font-size: 40px;
+                font-family: 'Fraunces', serif !important;
+            }
+    
+            p {
+                color: $dark_blue;
+                font-weight: bolder;
+            }
+        }
+    }
+
+    .sec_img_glass {
+        padding: 0px;
+        background-image: url('./images/photos/image-photography.jpg');
+        height: 600px;
+    }
+    .sec_img_eg {
+        padding: 0px;
+        background-image: url('./images/photos/image-transform.jpg');
+        height: 600px;
+    }
+
+}
+
+@import '_client_testimonial';
+
+.single_box_img {
+    background-color: $dark_moderate_cyan;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    div {
+        img {
+            width: 360px;
+        }
+    }
+}
+
+
+
+@import '_footer';
+

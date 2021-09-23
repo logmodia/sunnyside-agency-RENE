@@ -1,0 +1,59 @@
+header {
+    background-color: gray;
+    height: 800px;
+    width: 100%;
+    background-image: url(./images/photos/image-header.jpg);
+    background-size:cover;
+    background-position: center;
+
+    .logo_and_navlink {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .link_head {
+
+            li{
+                display: inline-block;
+                padding-right: 20px;
+
+                a {
+                    color: $white_color;
+                    padding: 5px;
+
+                    &:hover {
+                        color: black;
+                        background-color: $white_color;
+                        border-radius: 10px;
+                        
+                    }
+                }
+            }
+            
+        }
+
+       
+    }
+
+    .head_title {
+        text-align: center;
+        padding: 30px;
+        color: $white_color;
+        font-family: 'Fraunces', serif !important;
+        font-size: 40px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        word-spacing: 10px;
+        letter-spacing: 10px;
+    }
+
+    .img_arrow_down {
+        text-align: center;
+        padding: 30px;
+        img {
+            height: 150px;
+        }
+    }
+
+} //End of the header--------------------------------------

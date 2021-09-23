@@ -1,0 +1,60 @@
+section.sec_client_testimonial {
+
+    h2 {
+        text-transform: uppercase;
+
+        word-spacing: 5px;
+        letter-spacing: 8px;
+        color: $very_dark_grayish_blue;
+        font-weight: bolder;
+        font-family: 'Fraunces', serif !important;
+        font-size: 20px;
+
+        
+    }
+
+    padding: 150px;
+    background-color: $white_color;
+    text-align: center;
+
+    .card_container {
+        display: flex;
+        align-items: center; 
+        padding: 50px; 
+        
+        img {
+            border-radius: 70px;
+            width: 80px;
+            height: 80px;
+        }
+        .card_client {
+
+            h5 {
+                font-weight: bolder;
+                font-family: 'Fraunces', serif !important;
+                font-size: 18px;
+                padding: 0px;
+                display: inline;
+            }
+
+            p {
+                color: $very_dark_grayish_blue;
+                font-size: medium;
+                font-weight: bolder;
+                padding-right: 15px;
+                padding-left: 15px;
+                padding-bottom: 30px;
+            }
+
+            .client_grade {
+                font-size: 13px;
+                padding: 0px;
+            }
+        }
+        
+
+    }
+
+    
+
+}
